@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MK Praveen Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- <link rel="stylesheet" href="script.js"> -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #eef1f7;
+            text-align: center;
+        }
+        header {
+            background: #0073e6;
+            color: white;
+            padding: 15px 0;
+        }
+        h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #0073e6;
+}
+
+#about p
+{
+   text-align: justify;
+}
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        div+.id{
+            padding: 30px;
+            margin: 20px auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+        }
+        .card {
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            display: inline-block;
+            width: 250px;
+            text-align: center;
+        }
+        /* .project-card {
+            background: white;
+            color: black;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin: 10px;
+            display: inline-block;
+            width: 280px;
+            text-align: justify;
+        }
+        .project-card img {
+            width: 100%;
+            border-radius: 10px;
+        } */
+
+    #projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; 
+}
+
+.project-card {
+    background: white;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 280px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: justify;
+    height: auto; 
+}
+
+.project-card img {
+    width: 100%;
+    border-radius: 10px;
+    height: 150px; 
+    object-fit: cover;
+}
+
+#projects h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #0073e6;
+}
+
+#contact div p
+{
+    max-width: 800px;
+    /* margin: 0 auto; */
+    text-align: center;
+    justify-content: center;
+    margin-inline-start: 5px;
+    line-height: 1.6;
+}
+
+#education p
+{
+    text-align: center;
+}
+
+
+        footer {
+            background: #0073e6;
+            color: white;
+            padding: 15px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        form {
+            background:#0073e6;
+            padding: 45px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            margin: auto;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background: #0073e6;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover
+        {
+            background-color:white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            color: #0073e6;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to MK Praveen Portfolio Page</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#register">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- <section> -->
+    <div id="home" class="id">
+        <h2>Welcome to My Portfolio</h2>
+    </div>
+    
+    <div id="about" class="id">
+        <h2>About Me</h2>
+        <img src="./image/photo.jpeg" alt="Profile Picture" style="width:150px; border-radius: 50%;">
+        <p>I completed my MCA in 2023. After that, I joined Tap Academy to enhance my skills in Full Stack Web Development. During my learning journey, I successfully completed a few projects, applying my knowledge in real-world scenarios to build practical solutions.</p>
+    </div>
+    
+    <div id="skills" class="id">
+        <h2>Skills</h2>
+        <div class="card">Java</div>
+        <div class="card">Python</div>
+        <div class="card">HTML</div>
+        <div class="card">CSS</div>
+        <div class="card">JavaScript</div>
+        <div class="card">BootStrap</div>
+        <div class="card">Spring Boot</div>
+        <div class="card">MySQL</div>
+    </div>
+    
+    <div id="projects" class="id">
+        <h2>Projects</h2>
+        <div class="project-card">
+            <img src="./image/Hospital.avif" alt="Project 1">
+            <h3>Organ Donation and Transplantation System
+            </h3>
+            <p>This project aims to develop a secure, transparent, and decentralized system for organ donation and transplantation using blockchain technology. The system enhances the reliability of donor-recipient matching, prevents fraud, and ensures ethical distribution of organs.</p>
+        </div>
+        <div class="project-card">
+            <img src="./image/Food-Dev.avif" alt="Project 2">
+            <h3>Online Food Delivery App</h3>
+            <p>This project is a full-stack web and mobile app for ordering food from nearby restaurants. It features user authentication, a menu system, order tracking, and payment integration. Users can browse restaurants, filter dishes, add items to their cart, and receive real-time order updates.</p>
+        </div>
+    </div>
+    
+    <div id="education" class="id">
+        <h2>Education</h2>
+        <p>Full Stack Web Development |  Tap Academy | 2024</p>
+        <p>Master Of Computer Application(MCA)  | 2023</p>
+        <p>B.com (Computer Application)  | 2021</p>
+    </div>
+    
+    <div id="contact" class="id">
+        <h2>Contact</h2>
+        <div>
+        <p>(+91)-8978353830</p>
+        <p>EmailId: <a href="mailto:">praveenmkp7955@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/mkpraveen7955/">https://www.linkedin.com/in/mkpraveen7955/</a></p>
+        <p>Github: <a href="https://github.com/Praveenmk45">https://github.com/Praveenmk45</a></p>
+        </div>
+    </div>
+    
+    <div id="register" class="id">
+        <h2>Register</h2>
+        <form method="post" name="submit-to-google-sheet"> 
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Register</button> 
+    </div>
+    <!-- </section> -->
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyUNZdr8eUrvSw9WEScH8xh7JwPzqKXXKVBqYv4OzBc04r2ol4r-vnkrFUbfM8rsqA30Q/exec'
+        const form = document.forms['submit-to-google-sheet']
+        
+        form.addEventListener('submit', e => {
+            e.preventDefault();
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    alert("Form submitted successfully!");
+                    form.reset();
+                })
+                .catch(error => console.error('Error!', error.message));
+        });
+    </script>
+    
+    
+    <footer>
+        <p>&copy; 2025 My Portfolio. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
